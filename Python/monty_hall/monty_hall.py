@@ -69,3 +69,10 @@ print m.test()
 #change the default strategy from False to True
 m = MontyHall(change=True)
 print m.test()
+
+m = MontyHall(5)
+print m.test()
+
+#change the default strategy from False to True
+m = MontyHall(5,change=True)
+print m.test()
