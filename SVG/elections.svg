@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="elections.svg"
+   inkscape:export-filename="/home/jonathan/dev/site/blog_examples/SVG/elections.png"
+   inkscape:export-xdpi="102.55941"
+   inkscape:export-ydpi="102.55941">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="449.02327"
+     inkscape:cy="681.62441"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1106"
+     inkscape:window-height="916"
+     inkscape:window-x="357"
+     inkscape:window-y="118"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g4202"
+       transform="translate(0,9.0950928)">
+      <rect
+         y="170.95149"
+         x="282.10144"
+         height="48.729507"
+         width="48.729507"
+         id="rect2985"
+         style="opacity:0.25;fill:#aa0000;fill-opacity:1;stroke:none" />
+      <rect
+         y="170.95149"
+         x="12.000038"
+         height="48.729507"
+         width="263.24881"
+         id="rect2985-6"
+         style="opacity:0.25;fill:#c8b7b7;fill-opacity:1;stroke:none" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3097"
+         y="204.13818"
+         x="20.833908"
+         style="font-size:23.91665459px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           y="204.13818"
+           x="20.833908"
+           id="tspan3099"
+           sodipodi:role="line">Ticket 1</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3097-38"
+         y="192.09396"
+         x="136.58119"
+         style="font-size:11.31919575px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           y="192.09396"
+           x="136.58119"
+           id="tspan3099-2"
+           sodipodi:role="line">{Candidate} {Position}</tspan><tspan
+           id="tspan3170"
+           y="206.24297"
+           x="136.58119"
+           sodipodi:role="line">{Candidate} {Position}</tspan></text>
+    </g>
+    <g
+       id="g4211"
+       transform="translate(0,6.0634155)">
+      <rect
+         y="248.88948"
+         x="282.10144"
+         height="48.729507"
+         width="48.729507"
+         id="rect2985-2"
+         style="opacity:0.25;fill:#00ff00;fill-opacity:1;stroke:none" />
+      <rect
+         y="248.88948"
+         x="12.000038"
+         height="48.729507"
+         width="263.24881"
+         id="rect2985-6-5"
+         style="opacity:0.25;fill:#c8b7b7;fill-opacity:1;stroke:none" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3097-3"
+         y="282.0997"
+         x="20.833908"
+         style="font-size:23.91665459px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           y="282.0997"
+           x="20.833908"
+           id="tspan3099-8"
+           sodipodi:role="line">Ticket 2</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3097-38-6"
+         y="269.72513"
+         x="136.58119"
+         style="font-size:11.31919575px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           y="269.72513"
+           x="136.58119"
+           id="tspan3099-2-7"
+           sodipodi:role="line">{Candidate} {Position}</tspan><tspan
+           id="tspan3170-7"
+           y="283.87411"
+           x="136.58119"
+           sodipodi:role="line">{Candidate} {Position}</tspan></text>
+    </g>
+    <g
+       id="g4220"
+       transform="translate(0,3.0317383)">
+      <rect
+         y="326.82739"
+         x="282.10144"
+         height="48.729507"
+         width="48.729507"
+         id="rect2985-7"
+         style="opacity:0.25;fill:#aa0000;fill-opacity:1;stroke:none" />
+      <rect
+         y="326.82739"
+         x="12.000038"
+         height="48.729507"
+         width="263.24881"
+         id="rect2985-6-9"
+         style="opacity:0.25;fill:#c8b7b7;fill-opacity:1;stroke:none" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3097-9"
+         y="360.06119"
+         x="20.833908"
+         style="font-size:23.91665459px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           y="360.06119"
+           x="20.833908"
+           id="tspan3099-4"
+           sodipodi:role="line">Ticket 3</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3097-38-2"
+         y="347.35629"
+         x="136.58119"
+         style="font-size:11.31919575px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           y="347.35629"
+           x="136.58119"
+           id="tspan3099-2-5"
+           sodipodi:role="line">{Candidate} {Position}</tspan><tspan
+           id="tspan3170-0"
+           y="361.50528"
+           x="136.58119"
+           sodipodi:role="line">{Candidate} {Position}</tspan></text>
+    </g>
+    <g
+       id="g4229">
+      <rect
+         y="404.76538"
+         x="282.10144"
+         height="48.729507"
+         width="48.729507"
+         id="rect2985-0"
+         style="opacity:0.25;fill:#aa0000;fill-opacity:1;stroke:none" />
+      <rect
+         y="404.76538"
+         x="12.000038"
+         height="48.729507"
+         width="263.24881"
+         id="rect2985-6-4"
+         style="opacity:0.25;fill:#c8b7b7;fill-opacity:1;stroke:none" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3097-39"
+         y="438.02274"
+         x="20.833908"
+         style="font-size:23.91665459px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           y="438.02274"
+           x="20.833908"
+           id="tspan3099-3"
+           sodipodi:role="line">Ticket 4</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3097-38-69"
+         y="424.98743"
+         x="136.58119"
+         style="font-size:11.31919575px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           y="424.98743"
+           x="136.58119"
+           id="tspan3099-2-57"
+           sodipodi:role="line">{Candidate} {Position}</tspan><tspan
+           id="tspan3170-77"
+           y="439.13641"
+           x="136.58119"
+           sodipodi:role="line">{Candidate} {Position}</tspan></text>
+    </g>
+    <g
+       id="g4265"
+       transform="translate(0,12.53241)">
+      <rect
+         y="167.03505"
+         x="662.22925"
+         height="48.729507"
+         width="48.729507"
+         id="rect2985-22"
+         style="opacity:0.25;fill:#aa0000;fill-opacity:1;stroke:none" />
+      <rect
+         y="167.03505"
+         x="392.12781"
+         height="48.729507"
+         width="263.24881"
+         id="rect2985-6-57"
+         style="opacity:0.25;fill:#c8b7b7;fill-opacity:1;stroke:none" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3097-2"
+         y="200.22176"
+         x="400.9617"
+         style="font-size:23.91665459px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           y="200.22176"
+           x="400.9617"
+           id="tspan3099-89"
+           sodipodi:role="line">Ticket 1</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3097-38-66"
+         y="188.17751"
+         x="516.70898"
+         style="font-size:11.31919575px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           y="188.17751"
+           x="516.70898"
+           id="tspan3099-2-9"
+           sodipodi:role="line">{Candidate} {Position}</tspan><tspan
+           id="tspan3170-5"
+           y="202.32651"
+           x="516.70898"
+           sodipodi:role="line">{Candidate} {Position}</tspan></text>
+    </g>
+    <g
+       id="g4247"
+       transform="translate(0,5.5108032)">
+      <rect
+         y="322.91098"
+         x="662.22925"
+         height="48.729507"
+         width="48.729507"
+         id="rect2985-7-1"
+         style="opacity:0.25;fill:#aa0000;fill-opacity:1;stroke:none" />
+      <rect
+         y="322.91098"
+         x="392.12781"
+         height="48.729507"
+         width="263.24881"
+         id="rect2985-6-9-6"
+         style="opacity:0.25;fill:#c8b7b7;fill-opacity:1;stroke:none" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3097-9-7"
+         y="356.14474"
+         x="400.9617"
+         style="font-size:23.91665459px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           y="356.14474"
+           x="400.9617"
+           id="tspan3099-4-1"
+           sodipodi:role="line">Ticket 3</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3097-38-2-7"
+         y="343.43985"
+         x="516.70898"
+         style="font-size:11.31919575px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           y="343.43985"
+           x="516.70898"
+           id="tspan3099-2-5-4"
+           sodipodi:role="line">{Candidate} {Position}</tspan><tspan
+           id="tspan3170-0-4"
+           y="357.58884"
+           x="516.70898"
+           sodipodi:role="line">{Candidate} {Position}</tspan></text>
+    </g>
+    <g
+       id="g4238"
+       transform="translate(0,2)">
+      <rect
+         y="400.84897"
+         x="662.22925"
+         height="48.729507"
+         width="48.729507"
+         id="rect2985-0-8"
+         style="opacity:0.25;fill:#00ff00;fill-opacity:1;stroke:none" />
+      <rect
+         y="400.84897"
+         x="392.12781"
+         height="48.729507"
+         width="263.24881"
+         id="rect2985-6-4-7"
+         style="opacity:0.25;fill:#c8b7b7;fill-opacity:1;stroke:none" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3097-39-2"
+         y="434.10629"
+         x="400.9617"
+         style="font-size:23.91665459px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           y="434.10629"
+           x="400.9617"
+           id="tspan3099-3-9"
+           sodipodi:role="line">Ticket 4</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3097-38-69-4"
+         y="421.07101"
+         x="516.70898"
+         style="font-size:11.31919575px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           y="421.07101"
+           x="516.70898"
+           id="tspan3099-2-57-2"
+           sodipodi:role="line">{Candidate} {Position}</tspan><tspan
+           id="tspan3170-77-7"
+           y="435.22"
+           x="516.70898"
+           sodipodi:role="line">{Candidate} {Position}</tspan></text>
+    </g>
+    <g
+       id="g4256"
+       transform="translate(0,8.8654175)">
+      <rect
+         y="245.12921"
+         x="662.22925"
+         height="48.729507"
+         width="48.729507"
+         id="rect2985-22-8"
+         style="opacity:0.25;fill:#aa0000;fill-opacity:1;stroke:none" />
+      <rect
+         y="245.12921"
+         x="392.12781"
+         height="48.729507"
+         width="263.24881"
+         id="rect2985-6-57-4"
+         style="opacity:0.25;fill:#c8b7b7;fill-opacity:1;stroke:none" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3097-2-2"
+         y="278.31589"
+         x="400.96173"
+         style="font-size:23.91665459px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           y="278.31589"
+           x="400.96173"
+           id="tspan3099-89-5"
+           sodipodi:role="line">Ticket 1</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3097-38-66-7"
+         y="266.27164"
+         x="516.70898"
+         style="font-size:11.31919575px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           y="266.27164"
+           x="516.70898"
+           id="tspan3099-2-9-0"
+           sodipodi:role="line">{Candidate} {Position}</tspan><tspan
+           id="tspan3170-5-5"
+           y="280.42062"
+           x="516.70898"
+           sodipodi:role="line">{Candidate} {Position}</tspan></text>
+    </g>
+    <rect
+       style="opacity:0.25;fill:#c8b7b7;fill-opacity:1;stroke:none"
+       id="rect2985-6-56"
+       width="320.39166"
+       height="48.729507"
+       x="9.8041658"
+       y="105.14029" />
+    <rect
+       style="opacity:0.25;fill:#c8b7b7;fill-opacity:1;stroke:none"
+       id="rect2985-6-56-4"
+       width="320.39166"
+       height="48.729507"
+       x="389.80417"
+       y="105.14028" />
+    <text
+       xml:space="preserve"
+       style="font-size:32.48779678px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="92.262474"
+       y="141.33104"
+       id="text4274"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4276"
+         x="92.262474"
+         y="141.33104">Contest 1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:32.48779678px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="472.38937"
+       y="141.33104"
+       id="text4274-8"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4276-0"
+         x="472.38937"
+         y="141.33104">Contest 2</tspan></text>
+  </g>
+</svg>
