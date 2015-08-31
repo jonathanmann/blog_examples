@@ -1,0 +1,8 @@
+<form >
+
+<h2>Election Ballot</h2>
+<ul>
+	<li ng-repeat="t in tickets" ng-click="toggleActive(t)" ng-class="{active:t.active}"> {{t.name}}</li>
+</ul>
+
+</form>
