@@ -15,25 +15,36 @@ connection_string = "dbname='%s' user='%s' host='%s' password='%s'" % (dbname,us
 
 try:
     conn = psycopg2.connect(connection_string)
+    cur = conn.cursor()
+    cur.execute("SELECT B.ID, T.DESCRIPTION FROM BALLOT B INNER JOIN TICKET T ON B.TICKET_ID = T.ID;")
+    colnames = [desc[0] for desc in cur.description]
+    results = [] 
+    for row in cur.fetchall():
+        results.append(dict(zip(colnames,row)))
+    votes = results
+    #votes = json.dumps(results,indent=2)
+    cur.close()
+    conn.close()
+    print votes
 except:
     print("database connection error")
 
-votes = {
-        '1': {
-            'item1': 'Party1',
-            'item2': 'Info1'
-            },
+    votes = {
+            '1': {
+                'item1': 'Party1',
+                'item2': 'Info1'
+                },
 
-        '2': {
-            'item1': 'Party2',
-            'item2': 'Info2'
-            },
+            '2': {
+                'item1': 'Party2',
+                'item2': 'Info2'
+                },
 
-        '3': {
-            'item1': 'Party3',
-            'item2': 'Info3'
+            '3': {
+                'item1': 'Party3',
+                'item2': 'Info3'
+                }
             }
-        }
 
 class Root: pass
 
