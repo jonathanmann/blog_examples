@@ -4,30 +4,13 @@
 
 var appControllers = angular.module('appControllers', []);
 
-
 appControllers.controller('BallotCtrl', ['$scope','$http',
   function($scope,$http) {
-	console.log("got here");
-	/*
-    $http.get('file.php').success(function(data) {
-      $scope.results = data;
-    });
-	*/
-	$scope.tickets = [
-		{
-			"name": 'Ticket 1',
-
-		},{
-			"name": 'Ticket 2',
-
-		},{
-			"name": 'Ticket 3',
-
-		},{
-			"name": 'Ticket 4',
-		}
-	];
 	
+    $http.get('api/tickets').success(function(data) {
+      $scope.tickets = data;
+    });
+
 	$scope.toggleActive = function(t){
 
 		angular.forEach($scope.tickets, function(s){
