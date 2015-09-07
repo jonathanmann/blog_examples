@@ -1,4 +1,5 @@
 import json
+import uuid
 
 class API:
 
@@ -7,44 +8,41 @@ class API:
     def __init__(self,dct={}):
         self.items = dct
 
-    def GET(self, id=None):
+    def GET(self, u_id=None):
 
-        if id is None:
+        if u_id is None:
             return(json.dumps(self.items))
-        elif id in self.items:
-            item = self.items[id]
+        elif u_id in self.items:
+            item = self.items[u_id]
             return(json.dumps(item))
         else:
             return("{}")
 
     def POST(self, description):
-
-        #update with uuid
-        id = str(max([int(_) for _ in self.items.keys()]) + 1)
-
-        self.items[id] = {
+        u_id = uuid.uuid4()
+        self.items[u_id] = {
                 'description': description
                 }
 
-        return ('Created ID: %s' % id)
+        return ('Created ID: %s' % u_id)
 
-    def PUT(self, id, title=None, artist=None):
+    def PUT(self, u_id, title=None, artist=None):
 
         #need to fix put
-        if id in self.items:
-            item = self.items[id]
+        if u_id in self.items:
+            item = self.items[u_id]
 
             item['description'] = description or item['description']
 
-            return('ID %s updated' % id)
+            return('ID %s updated' % u_id)
         else:
-            return('No ID %s' % id)
+            return('No ID %s' % u_id)
 
-    def DELETE(self, id):
+    def DELETE(self, u_id):
         if id in items:
-            items.pop(id)
+            items.pop(u_id)
 
-            return('ID %s deleted.' % id)
+            return('ID %s deleted.' % u_id)
         else:
-            return('No ID %s' % id)
+            return('No ID %s' % u_id)
 
