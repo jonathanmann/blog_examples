@@ -5,7 +5,7 @@ class QueryTools:
     QueryTools : convert the results of a query to a python dictionary using the first column as the dictionary key
     """
 
-    def __init__(self,query,config_file='config/config.json'):
+    def __init__(self,query,write=False,config_file='config/config.json'):
         """
         Connect to the database using the provided config file and fetch the result
         """
@@ -15,10 +15,14 @@ class QueryTools:
         conn = psycopg2.connect(conn_str)
         cur = conn.cursor()
         cur.execute(query)
-        self.data = cur.fetchall()
-        self.cols = [desc[0] for desc in cur.description]
-        self.result_dict = self.get_dict()
-        self.result_json = json.dumps(self.result_dict)
+        if write:
+            conn.commit()
+            print 'committed'
+        else:
+            self.data = cur.fetchall()
+            self.cols = [desc[0] for desc in cur.description]
+            self.result_dict = self.get_dict()
+            self.result_json = json.dumps(self.result_dict)
         cur.close()
         conn.close()
 

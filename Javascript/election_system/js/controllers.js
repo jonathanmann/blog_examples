@@ -11,26 +11,21 @@ appControllers.controller('BallotCtrl', ['$scope','$http',
 				$scope.tickets = data;
 			});
 
-			$scope.vote_data = [{"vote" : "1","description" :"test party"}];
-
+			
 			$scope.submit_form = function(){
                 $http({
                     method  : 'POST',
-                    url     : 'api/tickets/11',
+                    url     : 'api/tickets/',
                     data    : $.param($scope.vote_data), 
                     headers : { 'Content-Type': 'application/x-www-form-urlencoded' } 
                 })
                 .success(function(data) {
-                    console.log('data');
-                    console.log(data);
-
                     if (!data.success) {
                         // if not successful, bind errors to error variables
                         console.log('error');
 												console.log(data);
                     } else {
                         // if successful, bind success message to message
-												console.log('happened');
                         $scope.message = data.message;
                         console.log($scope.message);
                     }
@@ -45,6 +40,8 @@ appControllers.controller('BallotCtrl', ['$scope','$http',
 					}
 				});
 				t.active = !t.active;
+				$scope.selected_id = t.id;
+				$scope.vote_data = {"dct" : '{"table" : "ballot","ticket_id" : "' + $scope.selected_id + '"}'};
 			};
 		}]);
 

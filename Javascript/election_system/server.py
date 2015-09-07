@@ -1,13 +1,13 @@
 #!/usr/bin/python
 import os
 import cherrypy
-from pg_tools.QueryTools import QueryTools
+from api_tools.QueryTools import QueryTools
 from api_tools.APITools import API
 
 vote_query = "SELECT B.ID, T.DESCRIPTION FROM BALLOT B INNER JOIN TICKET T ON B.TICKET_ID = T.ID;"
 votes = QueryTools(vote_query).result_dict
 
-ticket_query = "SELECT DESCRIPTION AS NAME FROM TICKET"
+ticket_query = "SELECT ID, DESCRIPTION AS NAME FROM TICKET"
 tickets = QueryTools(ticket_query).get_attr_list()
 
 class Root: pass

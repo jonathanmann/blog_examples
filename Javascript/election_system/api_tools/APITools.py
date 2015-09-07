@@ -1,5 +1,6 @@
 import json
 import uuid
+from QueryTools import QueryTools
 
 class API:
 
@@ -18,21 +19,24 @@ class API:
         else:
             return("{}")
 
-    def POST(self, description):
+    def POST(self, dct):
+
         u_id = uuid.uuid4()
-        self.items[u_id] = {
-                'description': description
-                }
+        d = eval(dct)
+        t = d["table"]
+        t_id = d["ticket_id"]
+        stmt = "insert into " + str(t) + " select '" + str(u_id) + "' id, '" + t_id + "' ticket_id"
+        QueryTools(stmt,write=True)
+        return ('{"success": true,"message" : "%s"}' % stmt)
 
-        return ('Created ID: %s' % u_id)
 
-    def PUT(self, u_id, title=None, artist=None):
+    """
 
-        #need to fix put
+    def PUT(self, u_id, dct):
+
+        #fix put
         if u_id in self.items:
             item = self.items[u_id]
-
-            item['description'] = description or item['description']
 
             return('ID %s updated' % u_id)
         else:
@@ -45,4 +49,5 @@ class API:
             return('ID %s deleted.' % u_id)
         else:
             return('No ID %s' % u_id)
+    """
 
