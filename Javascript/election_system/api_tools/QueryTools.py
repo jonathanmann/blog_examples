@@ -5,7 +5,7 @@ class QueryTools:
     QueryTools : convert the results of a query to a python dictionary using the first column as the dictionary key
     """
 
-    def __init__(self,query,write=False,config_file='config/config.json'):
+    def __init__(self,query,write=False,config_file='api_tools/config/config.json'):
         """
         Connect to the database using the provided config file and fetch the result
         """
