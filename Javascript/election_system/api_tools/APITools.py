@@ -6,8 +6,11 @@ class API:
 
     exposed = True
 
-    def __init__(self,dct={}):
-        self.items = dct
+    def __init__(self,query,attr=False):
+        if attr:
+            self.items = QueryTools(query).get_attr_list()
+        else:
+            self.items = QueryTools(query).result_dict
 
     def GET(self, u_id=None):
 
@@ -26,10 +29,11 @@ class API:
         t = d["table"]
         t_id = d["ticket_id"]
         stmt = "insert into " + str(t) + " select '" + str(u_id) + "' id, '" + t_id + "' ticket_id"
-        QueryTools(stmt,write=True)
-        #return ('{"success": true,"message" : "%s"}' % stmt)
-        return ('{"success": true,"message" : "%s"}' % u_id)
-
+        try:
+            QueryTools(stmt,write=True)
+            return ('{"success": true,"message" : "%s"}' % u_id)
+        except:
+            return ('{"success": false,"message" : "%s"}' % u_id)
 
     """
 
