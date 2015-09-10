@@ -27,7 +27,8 @@ class API:
         t_id = d["ticket_id"]
         stmt = "insert into " + str(t) + " select '" + str(u_id) + "' id, '" + t_id + "' ticket_id"
         QueryTools(stmt,write=True)
-        return ('{"success": true,"message" : "%s"}' % stmt)
+        #return ('{"success": true,"message" : "%s"}' % stmt)
+        return ('{"success": true,"message" : "%s"}' % u_id)
 
 
     """

@@ -15,6 +15,10 @@ app.config(['$routeProvider',
         templateUrl: 'views/ballot.html',
         controller: 'BallotCtrl'
       }).
+	  when('/receipt/:uuid', {
+        templateUrl: 'views/receipt.html',
+        controller: 'ReceiptCtrl'
+      }).
       otherwise({
         redirectTo: '/ballot' 
       });
