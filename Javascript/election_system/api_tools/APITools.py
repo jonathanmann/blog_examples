@@ -26,11 +26,15 @@ class API:
 
         u_id = uuid.uuid4()
         d = eval(dct)
+        print d
         t = d["table"]
         t_id = d["ticket_id"]
+        t_name = d["ticket_name"]
         stmt = "insert into " + str(t) + " select '" + str(u_id) + "' id, '" + t_id + "' ticket_id"
         try:
             QueryTools(stmt,write=True)
+            self.items[u_id] = '{"description" : "' + t_name + '"}'
+            print self.items[u_id]
             return ('{"success": true,"message" : "%s"}' % u_id)
         except:
             return ('{"success": false,"message" : "%s"}' % u_id)

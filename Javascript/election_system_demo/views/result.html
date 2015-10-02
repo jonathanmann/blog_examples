@@ -1,0 +1,56 @@
+<div class="row">
+    <div class="col-md-6 col-md-offset-3 table-responsive">
+        <h2 class="text-center">{Election Result}</h2>
+
+        <br/>
+        
+        <h3 class="text-center">{Election Summary}</h3>
+
+        <table class = "table table-striped">
+            <thead>
+                <th>
+                    Ticket
+                </th>
+                <th>
+                    Votes
+                </th>
+            </thead>
+            <tbody>
+            <tr ng-repeat="r in results"> 
+                <td>
+                    {{r.name}}
+                </td>
+                <td>
+                    {{r.votes}}
+                </td>
+            </tr> 
+            </tbody>
+        </table>
+
+
+        <hr/>
+        <br/>
+        <h3 class="text-center">{Election Data}</h3>
+        <label>Search: <input ng-model="searchText"></label>
+        <table class = "table table-striped">
+            <thead>
+                <th>
+                    UUID
+                </th>
+                <th>
+                    Ticket
+                </th>
+            </thead>
+            <tbody>
+            <tr ng-repeat="v in votes | filter:searchText"> 
+                <td>
+                    {{v.id}}
+                </td>
+                <td>
+                    {{v.description}}
+                </td>
+            </tr> 
+            </tbody>
+        </table>
+    </div>
+</div>

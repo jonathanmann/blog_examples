@@ -1,0 +1,40 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+/* Ballot */
+
+form {
+	margin-top:10px;
+	padding:8px;
+	border-style:solid;
+	border-width:1px;
+	border-color:GhostWhite;
+}
+
+form ul{
+	list-style:none;
+	color:#fff;
+	font-size:20px;
+	font-weight:bold;
+	text-align: left;
+	margin:20px 0 15px;
+}
+
+form ul li{
+	padding:20px 30px;
+	background-color:silver;
+	margin-bottom:8px;
+	cursor:pointer;
+}
+
+form ul li.active{
+	background-color:#8ec16d;
+}
+
+.confirm{
+	margin-top:35px;
+	background-color:gray;
+}
+

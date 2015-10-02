@@ -42,7 +42,7 @@ appControllers.controller('BallotCtrl', ['$scope','$http',
                 });
                 t.active = !t.active;
                 $scope.selected_id = t.id;
-                $scope.vote_data = {"dct" : '{"table" : "ballot","ticket_id" : "' + $scope.selected_id + '"}'};
+                $scope.vote_data = {"dct" : '{"table" : "ballot","ticket_id" : "' + $scope.selected_id + '","ticket_name" :"'+ t.name + '"}'};
             };
         }]);
 

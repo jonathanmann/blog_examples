@@ -5,10 +5,7 @@ from api_tools.QueryTools import QueryTools
 from api_tools.APITools import API
 
 vote_query = "SELECT B.ID, T.DESCRIPTION FROM BALLOT B INNER JOIN TICKET T ON B.TICKET_ID = T.ID;"
-votes = QueryTools(vote_query).result_dict
-
-ticket_query = "SELECT ID, DESCRIPTION AS NAME FROM TICKET"
-tickets = QueryTools(ticket_query).get_attr_list()
+ticket_query = "SELECT ID, DESCRIPTION AS NAME FROM TICKET;"
 
 class Root: pass
 
@@ -23,13 +20,13 @@ if __name__ == '__main__':
                 },
             })
 
-    cherrypy.tree.mount(API(votes), '/api/votes', config={
+    cherrypy.tree.mount(API(vote_query), '/api/votes', config={
             '/': {
                 'request.dispatch': cherrypy.dispatch.MethodDispatcher()
                 },
             })
 
-    cherrypy.tree.mount(API(tickets), '/api/tickets', config={
+    cherrypy.tree.mount(API(ticket_query,True), '/api/tickets', config={
             '/': {
                 'request.dispatch': cherrypy.dispatch.MethodDispatcher()
                 },
