@@ -1,0 +1,7 @@
+[
+	{"y": "s0","label": "Series 1","type": "area","striped": true,"color": "#1f77b4"},
+	{"y": "s1","label": "Series 2","type": "area","striped": true,"color": "#ff7f0e"},
+	{"y": "s2","label": "Series 3","type": "area","striped": true,"color": "#2ca02c"},
+	{"y": "s3","label": "Series 4","type": "area","striped": true,"color": "#f0a52c"}
+]
+

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Linear Optimization</title>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.min.js'></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular-route.min.js"></script>
+	<script src='http://d3js.org/d3.v3.min.js'></script>
+	<script src='https://rawgit.com/n3-charts/line-chart/master/build/line-chart.min.js'></script>
+	<script src="js/app.js"></script>
+	<link rel="stylesheet" href="css/style.css">    
+  </head>
+  <body>
+    <div class="container" ng-app="linear_optimization_demo" ng-controller="OptimizationCtrl">
+  		<linechart data="data" options="options"></linechart>
+	</div>
+  </body>
+</html>
