@@ -5,7 +5,11 @@ linear_demo.controller('OptimizationCtrl',['$scope','$http',
 				$scope.data= data;
 			});
 			$http.get('data/series.json').success(function(data) {
-				$scope.options = {lineMode: "cardinal", 
+				$scope.options = { lineMode: "linear", 
+					/*
+					axes: {
+						x: {key: 'x', ticksFormat: '.2f', type: 'linear', min: 0, max: 250, ticks: 2}
+					},*/
 					series: data
 				};
 			});
