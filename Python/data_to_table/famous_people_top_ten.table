@@ -1,0 +1,66 @@
+<table>
+  <thead>
+    <tr>
+      <th>Leonardo da Vinci</th>
+      <th>Italy</th>
+      <th>scientist</th>
+      <th>220</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Johann Wolfgang von Goethe</td>
+      <td>Germany</td>
+      <td>unknown</td>
+      <td>210</td>
+    </tr>
+    <tr>
+      <td>Emanuel Swedenborg</td>
+      <td>Sweden</td>
+      <td>philosopher</td>
+      <td>205</td>
+    </tr>
+    <tr>
+      <td>Gottfried Wilhelm von Leibniz</td>
+      <td>Germany</td>
+      <td>philosopher</td>
+      <td>205</td>
+    </tr>
+    <tr>
+      <td>John Stuart Mill</td>
+      <td>England</td>
+      <td>philosopher</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>Sir Francis Galton</td>
+      <td>British</td>
+      <td>scientist</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>Kim Ung-Yong</td>
+      <td>Korea</td>
+      <td>unknown</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>Thomas Wolsey</td>
+      <td>England</td>
+      <td>politician</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>William James Sidis</td>
+      <td>USA</td>
+      <td>unknown</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>Hugo Grotius</td>
+      <td>Netherlands</td>
+      <td>jurist</td>
+      <td>200</td>
+    </tr>
+  </tbody>
+</table>
