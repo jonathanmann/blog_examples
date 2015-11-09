@@ -1,13 +1,19 @@
 <table>
   <thead>
     <tr>
-      <th>Leonardo da Vinci</th>
-      <th>Italy</th>
-      <th>scientist</th>
-      <th>220</th>
+      <th>Name</th>
+      <th>Nationality</th>
+      <th>Occupation</th>
+      <th>Estimated IQ Score</th>
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td>Leonardo da Vinci</td>
+      <td>Italy</td>
+      <td>scientist</td>
+      <td>220</td>
+    </tr>
     <tr>
       <td>Johann Wolfgang von Goethe</td>
       <td>Germany</td>
