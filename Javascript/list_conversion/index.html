@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--Import Google Icon Font-->
+<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+<!--Let browser know website is optimized for mobile-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
+<script>
+function convert_list(){
+    var input_array = $("#input-list").val().split(" ")
+    $("#input-list").val(input_array.join())
+}
+</script>
+<!--
+<div class="row">
+  <div class="col s12 m7">
+    <h2 class="header">Horizontal Card</h2>
+    <div class="card horizontal">
+      <div class="card-image">
+        <img src="http://lorempixel.com/100/190/nature/10">
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+-->
+
+<div class="container">
+
+    <div class="row s12">
+            <h2 class="header"> List Conversion</h2>
+            <div class="row">
+                <div class="card horizontal">
+
+                    <div class="input-field col s12">
+                        <textarea id="input-list" class="materialize-textarea"></textarea>
+                        <!--<label for="input-list">Input List</label>-->
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn waves-effect waves-light"  onClick="convert_list()">Convert
+                <i class="material-icons right">send</i>
+            </button>
+
+    </div>
+</div>
+
+</body>
+</html>
