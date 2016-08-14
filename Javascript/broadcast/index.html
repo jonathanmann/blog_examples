@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Import Google Icon Font-->
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <style>
+iframe{
+    width: 0%;
+    height: 0%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.fullScreen {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.hide {
+    display:none;
+}
+        </style>
+    </head>
+    <body>
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
+        <script>
+function check_key(){
+    var key = $("#input-list").val()
+        document.getElementsByTagName("iframe")[0].className = "fullScreen";
+    document.getElementsByClassName("container")[0].className = "hide";
+    window.open(key, "content");
+}
+        </script>
+
+        <div class="container">
+            <br/>
+
+                <h4 class="header">Dashboard Login</h4>
+            <br/>
+                <div class="row">
+                    <div class="card horizontal">
+                        <div class="card-stacked">
+                        <div class="card-content">
+                            <div class="input-field">
+                                <textarea id="input-list" class="materialize-textarea"></textarea>
+                                <label for="input-list">Enter Authentication Key</label>
+                            </div>
+                        </div>
+                        <div class="card-action">
+                            <button class="btn waves-effect waves-light"  onClick="check_key()">Authenticate
+                            </button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+
+        </div>
+        <iframe name="content" frameBorder="0"></iframe>
+
+    </body>
+</html>
