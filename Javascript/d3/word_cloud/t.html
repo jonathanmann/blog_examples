@@ -25,22 +25,27 @@
 
 </body>
 <script>
-
-var frequency_list =  JSON.parse(data).filter(function (i,n){
-        return n.size===15;
-    }); //[{"text":"study sdfsdfsdf","size":40,"class":"C"},{"text":"motion","size":15,"class":"A"},{"text":"z","size":100,"class":"B"},{"text":"forces","size":10,"class":"A"}];
-
-
-    var color = d3.scale.linear()
-            .domain([0,1,2,3,4,5,6,10,15,20,100])
-            .range(["#ddd", "#ccc", "#bbb", "#aaa", "#999", "#888", "#777", "#666", "#555", "#444", "#333", "#222"]);
-
-    d3.layout.cloud().size([800, 300])
-            .words(frequency_list)
+var holder = JSON.parse(data)
+var get_data = function(c){ return holder.filter(function(n,i) {
+    if (c === "All") {return true} 
+    else {return n.class === c}
+})}
+    
+var phrase_cloud = function(){
+d3.select("svg").remove();
+      data = get_data("All")
+      d3.layout.cloud().size([800, 300])
+            .words(data)
             .rotate(0)
             .fontSize(function(d) { return d.size; })
             .on("end", draw)
             .start();
+
+}
+  var color = d3.scale.linear()
+            .domain([0,1,2,3,4,5,6,10,15,20,100])
+            .range(["#ddd", "#ccc", "#bbb", "#aaa", "#999", "#888", "#777", "#666", "#555", "#444", "#333", "#222"]);
+
 
     function draw(words) {
         d3.select("body").append("svg")
@@ -62,6 +67,8 @@ var frequency_list =  JSON.parse(data).filter(function (i,n){
                 .text(function(d) { return d.text; });
     }
 </script>
+<br>
+<textarea>B</textarea>
 
-
+<button onClick="phrase_cloud()">Update</button>
 </html>
