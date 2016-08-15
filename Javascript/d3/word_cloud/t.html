@@ -50,9 +50,12 @@ var populate = function(in_array){
     });
     return dict;
 };
+
 var dict = populate(holder);
+
 console.log(dict)
-    var get_data = function(c){ return holder.filter(function(n,i) {
+    
+var get_data = function(c){ return holder.filter(function(n,i) {
         if (c === "All") {return true} 
         else {return n.class === c}
     })};
