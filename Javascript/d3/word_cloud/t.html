@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
-<script type="text/javascript" src="data.json"></script>
-<script src="http://d3js.org/d3.v3.min.js"></script>
-<script src="d3.layout.cloud.js"></script>
-<head>
-    <title>Word Cloud Example</title>
-</head>
-<style>
-    body {
-        font-family:"Lucida Grande","Droid Sans",Arial,Helvetica,sans-serif;
-    }
+    <script type="text/javascript" src="data.json"></script>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="d3.layout.cloud.js"></script>
+    <head>
+        <title>Phrase Cloud</title>
+    </head>
+    <style>
+body {
+    font-family:"Lucida Grande","Droid Sans",Arial,Helvetica,sans-serif;
+}
     .legend {
         border: 1px solid #555555;
         border-radius: 5px 5px 5px 5px;
@@ -20,55 +20,83 @@
     .bld {
         font-weight: bold;
     }
-</style>
-<body>
+    </style>
 
-</body>
-<script>
-var holder = JSON.parse(data)
-var get_data = function(c){ return holder.filter(function(n,i) {
-    if (c === "All") {return true} 
-    else {return n.class === c}
-})}
-    
+    <body>
+        <br>
+        <select id="opts" onchange="phrase_cloud()">
+            <option value="Z">Z</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+        </select>
+
+        <button onClick="phrase_cloud()">Update</button>
+    </body>
+    <script>
+
+var holder = JSON.parse(data);
+
+var populate = function(in_array){
+    var dict = {}
+
+    var c = document.getElementById("opts").value;
+
+    in_array.forEach(function(e){
+        p = e.phrase;
+        if (e.class === c){
+            if (p in dict){dict[p] += 1} 
+            else{dict[p] = 1};
+        }
+    });
+    return dict;
+};
+var dict = populate(holder);
+console.log(dict)
+    var get_data = function(c){ return holder.filter(function(n,i) {
+        if (c === "All") {return true} 
+        else {return n.class === c}
+    })};
+var wrangle = function(){
+    alert('z')
+};
 var phrase_cloud = function(){
-d3.select("svg").remove();
-      data = get_data("All")
-      d3.layout.cloud().size([800, 300])
-            .words(data)
-            .rotate(0)
-            .fontSize(function(d) { return d.size; })
-            .on("end", draw)
-            .start();
+    var c = document.getElementById("opts").value;
 
-}
-  var color = d3.scale.linear()
-            .domain([0,1,2,3,4,5,6,10,15,20,100])
-            .range(["#ddd", "#ccc", "#bbb", "#aaa", "#999", "#888", "#777", "#666", "#555", "#444", "#333", "#222"]);
+    d3.select("svg").remove();
+    data = get_data(c)
+        d3.layout.cloud().size([800, 300])
+        .words(data)
+        .rotate(0)
+        .fontSize(function(d) { return d.size; })
+        .on("end", draw)
+        .start();
+
+};
+    var color = d3.scale.linear()
+.domain([0,1,2,3,4,5,6,10,15,20,100])
+    .range(["#ddd", "#ccc", "#bbb", "#aaa", "#999", "#888", "#777", "#666", "#555", "#444", "#333", "#222"]);
 
 
     function draw(words) {
         d3.select("body").append("svg")
-                .attr("width", 850)
-                .attr("height", 350)
-                .attr("class", "wordcloud")
-                .append("g")
-                // without the transform, words words would get cutoff to the left and top, they would
-                // appear outside of the SVG area
-                .attr("transform", "translate(320,200)")
-                .selectAll("text")
-                .data(words)
-                .enter().append("text")
-                .style("font-size", function(d) { return d.size + "px"; })
-                .style("fill", function(d, i) { return color(i); })
-                .attr("transform", function(d) {
-                    return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
-                })
-                .text(function(d) { return d.text; });
-    }
-</script>
-<br>
-<textarea>B</textarea>
+            .attr("width", 850)
+            .attr("height", 350)
+            .attr("class", "wordcloud")
+            .append("g")
+            // without the transform, words words would get cutoff to the left and top, they would
+            // appear outside of the SVG area
+            .attr("transform", "translate(320,200)")
+            .selectAll("text")
+            .data(words)
+            .enter().append("text")
+            .style("font-size", function(d) { return d.size + "px"; })
+            .style("fill", function(d, i) { return color(i); })
+            .attr("transform", function(d) {
+                return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+            })
+        .text(function(d) { return d.text; });
+    };
+    </script>
 
-<button onClick="phrase_cloud()">Update</button>
+
 </html>
