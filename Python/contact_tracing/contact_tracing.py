@@ -2,8 +2,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-def plot_contact_matrix(m,title,x_label,y_label,intensity=5,color_map=plt.cm.Greys):
-    fig = plt.figure(figsize=(8.0,9.99))
+def plot_contact_matrix(m,title,x_label,y_label,intensity=5,color_map=plt.cm.Reds,height=2.5):
+    fig = plt.figure(figsize=(7.99,height))
     plt.clf()
     plt.title(title,fontsize = 20)
     ax = fig.add_subplot(111)
@@ -42,15 +42,15 @@ for k in contact_trace:
 label = range(contact_count)
 
 # Plot the contact matrix
-plot_contact_matrix(contact_matrix,"Contact Matrix",label,label)
+plot_contact_matrix(contact_matrix,"Contact Matrix",label,label,color_map=plt.cm.Greys,height=7.99)
 
 # Plot direct contacts
-plot_contact_matrix(contact_matrix[[0]],"Quarantine",label,[0],intensity=6,color_map=plt.cm.Reds)
+plot_contact_matrix(contact_matrix[[0]],"Quarantine",label,[0],intensity=6)
 
 # Plot contacts of direct contacts
 contact_matrix2 = contact_matrix.dot(contact_matrix)
-plot_contact_matrix(contact_matrix2[[0]],"Isolation",label,[0],intensity=4,color_map=plt.cm.Reds)
+plot_contact_matrix(contact_matrix2[[0]],"Isolation",label,[0],intensity=4)
 
 # Plot contacts of contacts of direct contacts
 contact_matrix3 = contact_matrix2.dot(contact_matrix)
-plot_contact_matrix(contact_matrix3[[0]],"Monitoring",label,[0],intensity=2,color_map=plt.cm.Reds)
+plot_contact_matrix(contact_matrix3[[0]],"Monitoring",label,[0],intensity=2)
