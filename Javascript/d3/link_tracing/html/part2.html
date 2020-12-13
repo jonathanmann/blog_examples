@@ -1,0 +1,92 @@
+var simulation = d3.forceSimulation().nodes(nodes);
+                    
+                    
+//add forces
+//we're going to add a charge to each node 
+//also going to add a centering force
+//and a link force
+var link_force =  d3.forceLink(links)
+                        .id(function(d) { return d.name; });
+simulation
+    .force("charge_force", d3.forceManyBody())
+    .force("center_force", d3.forceCenter(width / 2, height / 2))
+    .force("links",link_force);
+
+        
+//add tick instructions: 
+simulation.on("tick", tickActions );
+
+//draw circles for the links 
+var node = svg.append("g")
+        .attr("class", "nodes")
+        .selectAll("circle")
+        .data(nodes)
+        .enter()
+        .append("circle")
+        .attr("r", 10)
+        .attr("fill", getColor);  
+
+
+//draw lines for the links 
+var link = svg.append("g")
+      .attr("class", "links")
+    .selectAll("line")
+    .data(links)
+    .enter().append("line")
+      .attr("stroke-width", 2)
+      .style("stroke", getColor);        
+                
+      
+var drag_handler = d3.drag()
+	.on("start", drag_start)
+	.on("drag", drag_drag)
+	.on("end", drag_end);	
+	
+//same as u	sing .call on the node variable as in https://bl.ocks.org/mbostock/4062045 
+drag_handler(node)
+
+
+
+/** Functions **/
+function getColor(d){return d.color}
+
+//drag handler
+//d is the node 
+function drag_start(d) {
+ if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+    d.fx = d.x;
+    d.fy = d.y;
+}
+
+function drag_drag(d) {
+  d.fx = d3.event.x;
+  d.fy = d3.event.y;
+}
+
+
+function drag_end(d) {
+  if (!d3.event.active) simulation.alphaTarget(0);
+  d.fx = null;
+  d.fy = null;
+}
+    
+
+    
+      
+function tickActions() {
+    //update circle positions each tick of the simulation 
+    node
+        .attr("cx", function(d) { return d.x; })
+        .attr("cy", function(d) { return d.y; });
+        
+    //update link positions 
+    //simply tells one end of the line to follow one node around
+    //and the other end of the line to follow the other node around
+    link
+        .attr("x1", function(d) { return d.source.x; })
+        .attr("y1", function(d) { return d.source.y; })
+        .attr("x2", function(d) { return d.target.x; })
+        .attr("y2", function(d) { return d.target.y; });
+	  } 
+
+</script>

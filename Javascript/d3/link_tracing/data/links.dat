@@ -1,0 +1,5 @@
+{"source": "e2", "target": "e3","color":"steelblue" },
+{"source": "e2", "target": "e1","color":"steelblue" },
+{"source": "e2", "target": "e4","color":"steelblue"},
+{"source": "e2", "target": "e6","color":"steelblue"},
+{"source": "e2", "target": "e7","color":"steelblue"},
